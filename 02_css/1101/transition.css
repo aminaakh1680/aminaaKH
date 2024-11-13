@@ -1,0 +1,35 @@
+.container {
+    width: 800px;
+    height: 300px;
+    align-content: center;
+    position: relative;
+   
+}
+
+img{
+    position: relative;
+    width: 200px;
+    height: 130px;
+transform: skewY(30deg);
+transition: 1s ease-in-out;
+cursor: pointer;
+}
+
+.img1{
+    left:100px;
+    z-index: 3;
+}
+.img2{
+z-index: 2;
+}
+
+.img3{
+    right: 100px;
+    z-index: 1;
+}
+
+img:hover{
+    transform: skew(0,0);
+    z-index: 4;
+    transform: 1s ease-out;
+}

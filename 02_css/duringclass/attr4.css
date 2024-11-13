@@ -1,0 +1,50 @@
+.box{
+    display: inline-block;
+    width: 400px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.background{
+    background-color: grey;
+    background: midnightblue;
+    /* color image repaet position/size 순서로 단축  가능*/
+    /* to right gej bas bolno eswel 90deg */
+    background: linear-gradient(to right ,black, white);
+}
+
+.background-image{
+    background-image: url('./img/small_img.png');
+
+    /* 1. background repeat */
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+
+    /* 2. background position */
+background-position: top left;
+background-position: center;
+background-position: top center; 
+background-position: 100px;
+background-position: 100px 10px; /*x축 y축 순서입니다*/
+background-position: top left;
+
+
+/*3.  background size */
+background-size: auto; /*  자기 사이즈 유지*/
+/* size를 하난만 쓰면 x 축 가로 너비 설정되고 세로는 비율에 맞춰 자동 설정됨 */
+background-size: 100px 200px; 
+background-size: 100px;
+background-size: contain; /*짧은 쪽에 맞게 설정됨*/
+background-size: cover; /* 긴 쪽에 맞게 설정*/
+
+
+/* 4. background- attachment */
+background-attachment: scroll;
+background-attachment: fixed;
+}
+body{
+    height: 1000px;
+}
+

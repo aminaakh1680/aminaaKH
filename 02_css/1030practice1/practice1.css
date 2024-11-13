@@ -1,0 +1,20 @@
+.box{
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* display: inline-block; */
+    cursor: pointer;
+}
+.hide2{
+    opacity: 0;
+    background-color: yellowgreen;
+}
+.hide3{
+    visibility: hidden;
+    background-color: aquamarine;
+}
+.hide4{
+    /* display: none; */
+    background-color: peru;
+}

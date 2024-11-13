@@ -1,0 +1,25 @@
+.ball {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg,rgb(255, 187, 0),brown);
+    border-radius: 50%;
+    position: absolute;
+    animation: ballAni 6s linear infinite;
+}
+@keyframes ballAni{
+    0%{
+        transform: translateX(0vw);
+    }
+    25%{
+       transform: translate(calc(100vw - 100px),0vh);
+    }
+    50%{
+    transform: translate(calc(100vw - 100px),calc(100vh - 100px));
+    }
+    75%{  transform: translate(0vw,calc(100vh - 100px));
+
+    }
+    100%{
+        transform: translate(0vw, 0vh)
+    }
+}

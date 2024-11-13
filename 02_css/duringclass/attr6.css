@@ -1,0 +1,142 @@
+.img-box{
+    width: 400px;
+    height: 250px;
+    background-color: #9494ed;
+
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid gold;
+
+}
+
+.img-box img:hover{
+/* transform */
+/* 1. skew: 기울이기 함수
+-skew(x_deg, y_deg), skewX(x_deg), skewY(y_deg)
+ */
+ transform: skewX(30deg);
+ transform: skewY(30deg);
+ transform: skew(30deg,30deg);
+
+ /* 2.scale : 크기 조절 함수*/
+ /* -scale(숫자, 숫자) , scaleX(배수), scaleY(배수) */
+ transform: scaleX(2);
+ transform: scaleY(0.7);
+ transform: scale(1.5, 0.8);
+ transform: scale(1.5);
+
+/*3. translete :이동 함수  */
+transform: translateX(-100px);
+transform: translateY(100px);
+transform: translate(100px, 50px);
+
+/* 4. rotate : 회전 함수 */
+/* 2d 함수 */
+transform: rotate(-45deg);
+/* 3d 함수 변화가 컸으면 하면 perspective를 줄여야 한다 */
+transform: perspective(200px ) rotateX(45deg);
+transform: perspective(400px) rotateY(180deg);
+
+/* 뒷면을 보이냐 아니냐 설정 */
+backface-visibility: visible;
+backface-visibility: hidden;
+
+/* 2다 동시에 적용하려면 단축 속성을 해야 하고 만약 아래 처럼 하면 맨 아래 명령만 적용됨 */
+transform: translateX(50px);
+transform: scaleX(1.2);
+/* 둘다 적용하려면 단축 속성 쓰기 , 아래의 순서로 */
+
+transform: perspective() translate() scale() rotate() skew();
+transform: translateX(100px) scaleX(1.2);
+}
+
+/* transition GO GO!! */
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color:midnightblue;
+
+}
+.box1:hover{
+    background-color: chocolate;
+    height: 120px;
+    width: 120px;
+
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+    /* zuwhun doorh 속성 l transition boloh  */
+    transition-property: background-color;
+}
+
+.box2:hover{
+    background-color: aqua;
+    transform: translateX(100px) scaleX(2);
+    transition: transform 1s ease-in-out 2s;
+    /* transition: proporty duration timing-function delay;
+    순서로 단축 */
+}
+.box3{
+    /* second를 0.6/ .6 둘다 가능 */
+    transition: 0.6s;
+}
+.box3:hover{
+    /* opacity: 0; */
+
+
+    visibility: hidden; /*visibility와 display 같은 중간값이 없는 경우는  transition 안 먹힌다*/ 
+
+
+}
+/* 가운데 정렬 방법
+1. flex
+2. position, transform
+3. position, margin:auto */
+.outer{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+}
+.outer .inner{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/* flex */
+.outer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer1 > .inner1{}
+
+/* position, transform */
+.outer2{
+    position: relative;
+}
+.outer2 > .inner2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* position , mergin:auto */
+
+.outer3{
+   position: relative;
+}
+.outer3 > .inner3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}

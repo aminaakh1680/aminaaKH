@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 11/12 실습 </title>
+    <style>
+       .container{
+        display: flex;
+      }
+      .container > div{
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        border-radius: 10px;
+        margin: 10px
+      }
+      
+      @media screen and (max-width:700px){
+        .container{
+          flex-wrap:wrap;
+          flex-direction: column;
+        }
+        .container > div{
+          background-color: skyblue;
+          border: 1px solid orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+  </body>
+</html>

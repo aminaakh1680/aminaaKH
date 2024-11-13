@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice 6</title>
+    <style>
+        h3:hover {
+            background-color: black;
+            color:white;
+        }
+      form {
+        width: 500px;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+      textarea:focus{
+        background-color: pink;
+        color: #666;
+        border: 2px solid #000;
+      }
+      input[type="checkbox"]:checked + label{font-weight: 600;}
+      input[type="checkbox"]#red:checked + label{color: #fff;background-color: red;}
+      input[type="checkbox"]#blue:checked + label{color: #fff;background-color: blue;}
+      input[type="checkbox"]#yellow:checked + label{background-color: yellow;}
+      input[type="submit"] 
+      {
+        margin-top: 20px;
+        float: right;
+        padding: 5px 15px;
+        background-color: #f96666;
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+      }
+      input[type="submit"]:active{
+        background-color: #b5b2b2;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>건의 사항을 적어주세요!</h3>
+    <form>
+       <textarea placeholder="건의 사항🎈"></textarea>
+       <input type="checkbox" id="red" >
+       <label for="red">빨강</label>
+       <input type="checkbox" id="blue">
+       <label for="blue">파랑</label>
+       <input type="checkbox" id="yellow" >
+       <label for="yellow">노랑</label>
+       
+      <input type="submit" value="제출">
+    </form>
+  </body>
+</html>

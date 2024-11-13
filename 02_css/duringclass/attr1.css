@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@font-face {
+    font-family: 'YOnepickTTF-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/YOnepickTTF-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GumiRomanceTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body{ 
+    background-color: aliceblue;
+} */
+/* body{ */
+    font-family: 'GumiRomanceTTF';
+  
+}
+
+.font-link{
+    font-family: "Black Han Sans", sans-serif;
+}
+.font-import{
+    font-family:"Black Han Sans", sans-serif;
+}
+.noonnu_font{
+    font-family: 'YOnepickTTF-Bold',serif;
+
+}
+.container{
+    background-color: gold;
+    /* 글자색은 기본적으로 상속돤다 (cascading) */
+    color: gray;
+    
+}
+.container > .sentences{
+    /* font-weight : 글씨 굵기*/
+    /* font-weight: bold; */
+    /* font-weight: 400; */
+   font-weight: 700;
+   /* font-size: 글씨 크기 16px default */
+   font-size: 16px;
+   /* font-size: 1rem; */
+   /* font-size: 1em; */
+
+   /* text-align :정렬 */
+   text-align: center;
+   text-align: right;
+   text-align: left;
+
+   /* text-decoration : 문자 꾸미기 */
+   /* text-decoration: line-through; */
+
+/* text-decoration: underline; */
+/* text-decoration: overline; */
+    
+/*  line-height: 줄간 간격 */
+/* line-height: 1; */
+/* line-height: 2; */
+line-height: 20px;
+}
+.test{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* 글이 한 줄이 떄는 세로기준 가운데 정렬로 사용한다 */
+    /* line height n undurten ijil hemjeeg n songj ugsnuur dund n garj irne */
+    line-height: 100px;
+}
+/* towchiig tusad n styling */
+.container a{
+    color: gray;
+    text-decoration: none;
+    /* 색상 지정 방법 
+    1.색상이름으로 설정- red, blue,purple ..,
+    2. rgb 함수를 쓰기 - (숫자,숫자,숫자) /0~255 중 하나) 
+    red green blue
+    -rgba(): 투명도 지정 
+    3. #NNNNNN 
+    rgb(0,0,0) :black; #000000
+    rgb(255,255,255); white; #ffffff ff-255
+    -0~9 와 a,b,c,d,e,f 로 이루어진 수 
+    4. 색갈 눌러서 pallete 로 지정가능
+
+    */
+}

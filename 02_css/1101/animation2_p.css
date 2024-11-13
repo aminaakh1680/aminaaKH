@@ -1,0 +1,14 @@
+.text{
+    position: absolute;
+    animation: moving 3s linear;
+}
+
+@keyframes moving {
+  from{
+    width: 300vw;
+    transform: translateX(100vw);
+  }
+  to { 
+    width: 100vw;
+    transform: translateX(0);
+  }}
