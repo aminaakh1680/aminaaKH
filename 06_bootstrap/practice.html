@@ -3,75 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<style>
+    <title>mongolia page</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-</style>
-<script src="https://kit.fontawesome.com/4f367cba57.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <style>
+   
+        .navbar {
+            background: linear-gradient(45deg, #60b7d4, #92c8ff); 
+        }
+
+        body {
+            background-image: url('./img/nature6.jpg'); 
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            min-height: 100vh; 
+            position: relative; 
+        }
+
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1; 
+        }
+
+      
+        .carousel-item img {
+            max-height: 400px; 
+            object-fit: cover; 
+        }
+    </style>
 </head>
 <body>
-    <div class="headersection"> 
-         <nav class="navbar navbar-expand-lg bg-body-territory position-relative"> <!--navbarnii durwuljin-->
-            <div class="container-fluid position-relative">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-heart"></i></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse position-relative" id="navbarTogglerDemo02">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute d-flex justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-                        </li>
-                 
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div> 
-            </div>
-         </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showAlert('마이페이지')">마이페이즈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showAlert('공지사항')">공지사항</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showAlert('연락처')">연락처</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    
-<div id="carouselExample" class="carousel slide">
+</nav>
+
+<div class="container mt-5">
+    <h1 class="text-center text-white">MONGOLIA</h1>
+    <p class="lead text-center text-white">몽골을 소개합니다</p>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="card" style="width:36rem">
-            <img src="./img/nature3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">자연에 있으면 스트레스 풀린다</p>
-            </div>
-        </div>
+        <img src="./img/nature5.jpg" class="d-block w-100" alt="자연사진1">
       </div>
       <div class="carousel-item">
-        <div class="card" style="width: 36rem;">
-            <img src="./img/nature1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">물소리를 들으면 마음이 진정된다</p>
-            </div>
-        </div>
+        <img src="./img/nature4.jpg" class="d-block w-100" alt="자연사진2">
       </div>
       <div class="carousel-item">
-        <div class="card" style="width: 36rem;">
-            <img src="./img/nature2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">공기 좋은 곳에 머물면 편안해진다</p>
-            </div>
-        </div>
+        <img src="./img/nature3.jpg" class="d-block w-100" alt="자연사진3">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -79,10 +101,33 @@
 
 
 
-                    </div>
-                   
 
-<!-- BOOTSTRAP CDD -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <div class="list-group">
+    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+     오늘의 인기 글 보기
+    </button>
+    <button type="button" class="list-group-item list-group-item-action">겨울에 가기 좋은 여행지</button>
+    <button type="button" class="list-group-item list-group-item-action">외국인들이 좋아하는 인기 관광명소</button>
+    <button type="button" class="list-group-item list-group-item-action">몽골의 맛집 모아보기</button>
+   
+  </div>
+
+
+
+
+<!-- SweetAlert2 & Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function showAlert(pageName) {
+        Swal.fire({
+            title: `${pageName}`,
+            text: `${pageName} 페이지로 이동하시겠습니까?`,
+            icon: 'info',
+            confirmButtonText: '확인'
+        });
+    }
+</script>
+
 </body>
 </html>
